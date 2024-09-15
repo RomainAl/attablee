@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@TABLEE</title>
+    <title>ATABLEE - Beta - v1</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="/assets/index-BoE9LxYE.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Cb24oE2X.css">
+  <script type="module" crossorigin src="/assets/index-DeDiMl3R.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cke6yGUk.css">
 </head>
 <body>
     <div id="atablee">
@@ -16,7 +16,7 @@
         <canvas id="canvas"></canvas>
         <!-- <div data-vimeo-id="750452856" id="vimeo" data-vimeo-loop="true" data-vimeo-controls="true" data-vimeo-autoplay="true" data-vimeo-muted="true" ></div> -->
         <video id="video" src = "./videos/video6.mp4" type="video/mp4" playsinline preload="none" autoplay muted></video>
-        <video id="video_webrtc" playsinline></video>
+        <video id="video_webrtc" playsinline preload="none" autoplay muted></video>
         <audio id="audio_nico" style="display: none"></audio>
     </div>
     <div id="GUI" style="display: none;">
@@ -29,33 +29,38 @@
         </div>
             
         <div id="Btns">
-            <button id="btn_effects" disabled><i class="fa-solid fa-gear" style="color: #ffffff;"></i></button>
-            <button id="btn_rec" disabled style="background-color: transparent;">
+            <button id="btn_effects" disabled style="padding: 14px 16px;"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></button>
+            <button id="btn_rec" disabled style="padding: 14px 14px;">
                 <i id="rec" class="fa-solid fa-circle fa-lg" style="color: #FF0000;"></i>
                 <i id="stop" class="fa-solid fa-square fa-lg" style="color: #FFFFFF;  display: none"></i>
                 <i id="trash" class="fa-regular fa-trash-can fa-lg" style="color: #ffffff; display: none"></i></button>
-            <button id="btn_gain"><i id="g1" class="fa-solid fa-volume-high fa-lg" style="color: #ffffff;"></i><i id="g2" class="fa-solid fa-volume-xmark fa-lg" style="color: #ffffff; display: none"></i></button>
-            <button id="btn_fullscreen"><i id="fs1" class="fa-solid fa-up-right-and-down-left-from-center" style="color: #ffffff;"></i><i id="fs2" class="fa-solid fa-down-left-and-up-right-to-center" style="color: #ffffff; display: none"></i></button>
+            <button id="btn_gain" style="padding: 14px 13px;"><i id="g1" class="fa-solid fa-volume-high fa-lg" style="color: #ffffff;"></i><i id="g2" class="fa-solid fa-volume-xmark fa-lg" style="color: #ffffff; display: none"></i></button>
+            <button id="btn_fullscreen" style="padding: 14px 16px;"><i id="fs1" class="fa-solid fa-up-right-and-down-left-from-center" style="color: #ffffff;"></i><i id="fs2" class="fa-solid fa-down-left-and-up-right-to-center" style="color: #ffffff; display: none"></i></button>
             <!-- <button id="btn_test">TEST</button> -->
         </div>
     </div>
-    <div id="overlay">
+    <div id="overlay" class="overlay">
         <div id="titles">
             <h2 >Bienvenue dans l'expérience<br>@TABLÉE</h2>
-            <p id="wifi">. Connecte toi au wifi : <br> "atablee" mdp: "atablee2023".</p>
+            <p id="wifi">Connecte toi au wifi : <br> "<strong>attablee</strong>" mdp: "12345678"</p>
             <p>. Monte ton volume . <br>. Monte ta luminosité . <br>
                 . Et allume ton micro :</p>
         </div>
-        <p id="err" style="display: none">
-          <i class="fa-solid fa-triangle-exclamation fa-2xl" style="color: #ffffff;"></i>
-          <br><br><br>Accès impossible à ton micro... 
-          <br> Mais tu peux rester pour la suite ! 
-        </p>
+        <p id="err" style="display: none"><i class="fa-solid fa-triangle-exclamation fa-2xl" style="color: #ffffff;"></i><br><br><br>Accès impossible à ton micro... <br> Mais tu peux rester pour la suite ! </p>
         <button id="startButton" disabled class="spinner">
             <i id="microon" class="fa-solid fa-microphone fa-2xl" style="color: #ffffff;"></i>
             <i id="microoff" class="fa-solid fa-microphone-slash fa-2xl" style="color: #ffffff; padding: 12px 0; display: none"></i>
         </button>
         <p class="alert">. Désolé, nous travaillons actuellement sur le site . <br>. (v2.02) .</p>
+    </div>
+    <div id="overlayTHEEND" class="overlay" style="visibility: hidden">
+        <h1><strong>FIN</strong></h1>
+        <p>
+            <strong>Olivia SCEMAMA</strong><br>Contrebasse <br><br>
+            <strong>Romain AL.</strong><br>Développement numérique / Vidéos live <br><br>
+            <strong>Nicolas CANOT</strong><br>Électronique / FX / Spatialisation sonore
+        </p>
+        <p>Expérience imaginée avec<br><strong>Yann JOUSSEIN</strong></p>
     </div>
     <div id="loading-bar" ></div>
     <div id="adminID"></div>
